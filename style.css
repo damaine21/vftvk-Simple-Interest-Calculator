@@ -11,3 +11,8 @@ table {
   border-spacing: 10px;
   margin-left: 30px;
 }
+
+mark {
+	background-color: yellow;
+	font-weight: bold;
+}
