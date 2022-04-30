@@ -1,4 +1,10 @@
-body {background-color: #FFFFFF;}
-h1{color: #999999;}
+body {
+  background-color: #FFFFFF;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #999999;
+}
 
 
