@@ -33,6 +33,6 @@ function compute()
     
     document.getElementById("output").innerHTML("test");
     
-
+console.log(output);
 }
         
