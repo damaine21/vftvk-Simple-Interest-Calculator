@@ -1,11 +1,11 @@
 function compute()
 {
     // Simple Interest Formula
-    p = Number(document.getElementById("principal").value);
-    r = Number(document.getElementById("rate").value);
-    y = Number(document.getElementById("years").value);
+    let p = Number(document.getElementById("principal").value);
+    let r = Number(document.getElementById("rate").value);
+    let y = Number(document.getElementById("years").value);
     
-    i = (p * r * y) / 100;
+    let si = (p * r * y) / 100;
     
     
     // Figure out the number of years
@@ -17,10 +17,10 @@ function compute()
     // Output the results
     output = "If you deposit " + p + ",<br>" +
              "at an interest rate of " + r + "%.<br>" +
-             "You will receive an amount of " + i + ",<br>" +
+             "You will receive an amount of " + si + ",<br>" +
              "in the year " + numYears;
     
-    document.getElementById("output").innerHTML(output);
+    document.getElementById("output").innerHTML("test");
     
 
 }
