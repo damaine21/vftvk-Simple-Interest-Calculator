@@ -5,7 +5,7 @@ function compute()
     r = document.getElementById("rate").value;
     y = document.getElementById("years").value;
     
-    i = p * r * y;
+    i = (p * r * y) / 100;
     
     
     // Figure out the number of years
