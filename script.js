@@ -4,7 +4,7 @@ function compute()
     r = document.getElementById("rate").value;
     y = document.getElementById("years").value;
     
-    i = p(1 + (r*t));
+    i = p(1 + (r*y));
     
     output = "If you deposit " + p + ",<br>" +
              "at an interest rate of " + r + "%.<br>" +
