@@ -7,4 +7,6 @@ h1 {
   color: #999999;
 }
 
-
+table {
+  border-spacing: 20px;
+}
