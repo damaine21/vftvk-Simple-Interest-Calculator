@@ -13,6 +13,15 @@ function compute()
 {
     // Simple Interest Formula
     let p = Number(document.getElementById("principal").value);
+    
+    // Make sure that a non-zero or negative number is not entered
+    if (p < 1)
+	{
+		alert("Please enter a positive number. :)");
+		document.getElementById("principal").focus();
+		return;
+	}
+    
     let r = Number(document.getElementById("rate").value);
     let y = Number(document.getElementById("years").value);
     
