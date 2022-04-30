@@ -39,7 +39,7 @@ function compute()
     // Output the results
     let output = "If you deposit <mark>" + p + "</mark>,<br>" + 
 			     "at an interest rate of <mark>" + r + "%</mark>.<br>" + 
-			     "You will receive an amount of <mark>" + si + ",</mark><br>" + 
+			     "You will receive an amount of <mark>" + si + "</mark>,<br>" + 
 			     "in the year <mark>" + numYears + "</mark>.";
     
     document.getElementById("output").innerHTML = output;
