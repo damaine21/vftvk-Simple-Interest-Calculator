@@ -9,13 +9,13 @@ function compute()
     
     
     // Figure out the number of years
-    currentDate = new Date();
+    const currentDate = new Date();
     let year = currentDate.getFullYear();
-    numYears = currentDate + y;
+    let numYears = currentDate + y;
     
     
     // Output the results
-    output = "If you deposit " + p + ",<br>" +
+    let output = "If you deposit " + p + ",<br>" +
              "at an interest rate of " + r + "%.<br>" +
              "You will receive an amount of " + si + ",<br>" +
              "in the year " + numYears;
