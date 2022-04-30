@@ -1,7 +1,9 @@
+var r;
+
 function showRate()
 {   
     // Show current slider value
-    var r = Number(document.getElementById("rate").value);
+    r = Number(document.getElementById("rate").value);
     document.getElementById("currentRate").innerHTML = r + "%";
 }
 
@@ -11,7 +13,7 @@ function compute()
 {
     // Simple Interest Formula
     let p = Number(document.getElementById("principal").value);
-    // let r = Number(document.getElementById("rate").value);
+    let r = Number(document.getElementById("rate").value);
     let y = Number(document.getElementById("years").value);
     
     let si = (p * r * y) / 100;
@@ -20,19 +22,18 @@ function compute()
     // Figure out the number of years
     const currentDate = new Date();
     let year = currentDate.getFullYear();
-    let numYears = currentDate + y;
+    let numYears = year + y;
     
 
     
     
     // Output the results
-    let output = "If you deposit " + p + ",<br>" +
-             "at an interest rate of " + r + "%.<br>" +
-             "You will receive an amount of " + si + ",<br>" +
-             "in the year " + numYears;
+    let output = "If you deposit <mark>" + p + "</mark>,<br>" + 
+			     "at an interest rate of <mark>" + r + "%</mark>.<br>" + 
+			     "You will receive an amount of <mark>" + si + ",</mark><br>" + 
+			     "in the year <mark>" + numYears + "</mark>.";
     
-    document.getElementById("output").innerHTML("test");
-    
-console.log(output);
+    document.getElementById("output").innerHTML = output;
+	
+	return false;
 }
-        
