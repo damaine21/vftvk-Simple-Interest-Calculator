@@ -14,7 +14,7 @@
             </tr>
             <tr>
                 <td><label for="rate">Rate</label></td>
-                <td><input type="range" min="0" max="10" step= "0.1"  id="rate"  name="rate"></td>
+                <td><input type="range" min="0" max="10" step= "0.1"  onchange=showRate()  id="rate"  name="rate"><span id="currentRate"></span></td>
             </tr>
             <tr>
                 <td><label for="years">No. of Years</label></td>
