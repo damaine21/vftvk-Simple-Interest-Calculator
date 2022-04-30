@@ -1,50 +1,52 @@
+<!DOCTYPE html>
 <html>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
 
-        <form>
-        <table>
-            <tr>
-                <td><label for="number">Amount</label></td>
-                <td><input type="number"  id="principal"  name="principal"></td>
-            </tr>
-            <tr>
-                <td><label for="rate">Rate</label></td>
-                <td><input type="range" min="0" max="10" step= "0.1"  onchange=showRate()  id="rate"  name="rate"><span id="currentRate"></span></td>
-            </tr>
-            <tr>
-                <td><label for="years">No. of Years</label></td>
-                <td>
-                    <select id="years" name="years">
-                        <option value=1>1</option>
-                        <option value=2>2</option>
-                        <option value=3>3</option>
-                        <option value=4>4</option>
-                        <option value=5>5</option>
-                        <option value=6>6</option>
-                        <option value=7>7</option>
-                        <option value=8>8</option>
-                        <option value=9>9</option>
-                        <option value=10>10</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td><button onclick="compute()">Compute Interest</button></td>
-            </tr>
-            <tr>
-                <td id="output">Output Goes Here</td>
-            </tr>
-        </table>
+<head>
+	 <script src="script.js"></script>
+	 <link rel="stylesheet" href="style.css">
+	 <title>Simple Interest Calculator</title>
+</head>
 
-        <!-- <span id="result"></span> -->
-            
-        </form>
-            
-        <p>&copy; Everyone Can Get Rich</p>
-    </body>
+<body>
+    <h1>Simple Interest Calculator</h1>
+
+    <form>
+	    <table>
+	        <tr>
+	            <td><label for="number">Amount</label></td>
+	            <td><input type="number"  id="principal"  name="principal"></td>
+	        </tr>
+	        <tr>
+	            <td><label for="rate">Interest Rate</label></td>
+	            <td><input type="range" min="0" max="10" step= "0.1"  onchange=showRate()  id="rate"  name="rate"><span id="currentRate"></span></td>
+	        </tr>
+	        <tr>
+	            <td><label for="years">No. of Years</label></td>
+	            <td>
+	                <select id="years" name="years">
+	                    <option value=1>1</option>
+	                    <option value=2>2</option>
+	                    <option value=3>3</option>
+	                    <option value=4>4</option>
+	                    <option value=5>5</option>
+	                    <option value=6>6</option>
+	                    <option value=7>7</option>
+	                    <option value=8>8</option>
+	                    <option value=9>9</option>
+	                    <option value=10>10</option>
+	                </select>
+	            </td>
+	        </tr>
+	        <tr>
+	        	<!-- return false prevents the form from automatically trying to submit the data -->
+	            <td><button onclick="compute(); return false">Compute Interest</button></td>
+	        </tr>
+	        <tr>
+	            <td colspan="2" id="output"></td>
+	        </tr>
+	    </table>
+    </form>
+        
+    <p>&copy; Everyone Can Get Rich</p>
+</body>
 </html>
