@@ -2,7 +2,7 @@ function showRate()
 {   
     // Show current slider value
     var r = Number(document.getElementById("rate").value);
-    document.getElementById("currentRate").innerHTML = r;
+    document.getElementById("currentRate").innerHTML = r + "%";
 }
 
 
