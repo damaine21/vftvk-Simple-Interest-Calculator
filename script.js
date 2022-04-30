@@ -1,9 +1,9 @@
 function compute()
 {
     // Simple Interest Formula
-    p = document.getElementById("principal").value;
-    r = document.getElementById("rate").value;
-    y = document.getElementById("years").value;
+    p = Number(document.getElementById("principal").value);
+    r = Number(document.getElementById("rate").value);
+    y = Number(document.getElementById("years").value);
     
     i = (p * r * y) / 100;
     
