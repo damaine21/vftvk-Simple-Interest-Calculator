@@ -1,8 +1,17 @@
+function showRate()
+{   
+    // Show current slider value
+    var r = Number(document.getElementById("rate").value);
+    document.getElementById("currentRate").innerHTML = r;
+}
+
+
+
 function compute()
 {
     // Simple Interest Formula
     let p = Number(document.getElementById("principal").value);
-    let r = Number(document.getElementById("rate").value);
+    // let r = Number(document.getElementById("rate").value);
     let y = Number(document.getElementById("years").value);
     
     let si = (p * r * y) / 100;
@@ -12,6 +21,8 @@ function compute()
     const currentDate = new Date();
     let year = currentDate.getFullYear();
     let numYears = currentDate + y;
+    
+
     
     
     // Output the results
